@@ -7,6 +7,7 @@
 //
 
 #import "RMSocketManager.h"
+#import "SRWebSocket.h"
 
 static RMSocketManager *_sharedInstance = nil;
 static dispatch_once_t oncePredicate;
@@ -14,10 +15,14 @@ static dispatch_once_t oncePredicate;
 #define IP_ADDRESS   @"http://192.168.1.1"
 #define PORT_ADDRESS @"8080"
 
+@interface RMSocketManager () <SRWebSocketDelegate> {
+  SRWebSocket *socket;
+}
+@end
+
 @implementation RMSocketManager
 
-+ (RMSocketManager *)sharedInstance
-{
++ (RMSocketManager *)sharedInstance {
    dispatch_once(&oncePredicate, ^{
       _sharedInstance = [[RMSocketManager alloc] init];
    });
