@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface RMSocketManager : NSObject
-
++ (RMSocketManager *)sharedInstance;
 @end

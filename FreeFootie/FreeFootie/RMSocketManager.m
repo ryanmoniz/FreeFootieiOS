@@ -8,6 +8,19 @@
 
 #import "RMSocketManager.h"
 
+static RMSocketManager *_sharedInstance = nil;
+static dispatch_once_t oncePredicate;
+
 @implementation RMSocketManager
+
++ (RMSocketManager *)sharedInstance
+{
+   dispatch_once(&oncePredicate, ^{
+      _sharedInstance = [[RMSocketManager alloc] init];
+   });
+   return _sharedInstance;
+}
+
+
 
 @end
