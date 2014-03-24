@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SRWebSocket.h"
 
-@interface RMSocketManager : NSObject
+@interface RMSocketManager : NSObject <SRWebSocketDelegate>
+{
+   SRWebSocket *socket;
+}
 + (RMSocketManager *)sharedInstance;
 @end
