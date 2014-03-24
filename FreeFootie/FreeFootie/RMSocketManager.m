@@ -37,6 +37,17 @@ static dispatch_once_t oncePredicate;
    return nil;
 }
 
+#pragma mark - Socket Rocket Delegate Methods
+
+-(void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
+   NSLog(@"%@",message);
+
+}
+-(void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error{
+
+}
+-(void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{
+}
 
 
 
