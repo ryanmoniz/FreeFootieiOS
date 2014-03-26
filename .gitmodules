@@ -1,3 +1,6 @@
 [submodule "Libs/SocketRocket"]
 	path = Libs/SocketRocket
 	url = https://github.com/square/SocketRocket.git
+[submodule "Libs/RESTKit"]
+	path = Libs/RESTKit
+	url = https://github.com/RestKit/RestKit.git
