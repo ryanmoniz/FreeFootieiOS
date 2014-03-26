@@ -12,6 +12,8 @@
 
 + (RMSocketManager *)sharedInstance;
 
+- (void)closeConnection;
+
 //Refs will search through a list of the day’s games (sorted by geographical nearness).
 - (NSArray *)listOfGamesForDate:(NSDate *)date;
 

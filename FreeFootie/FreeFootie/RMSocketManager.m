@@ -29,10 +29,17 @@ static dispatch_once_t oncePredicate;
    return _sharedInstance;
 }
 
+- (void)closeConnection {
+   socket.delegate = nil;
+   [socket close];
+   socket = nil;
+}
+
 - (id)init {
    if (self = [super init]) {
       //create a web socket connection
       socket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@:%@",IP_ADDRESS,PORT_ADDRESS]]]];
+      [socket setDelegate:self];
 
       [socket open];
 
@@ -54,11 +61,14 @@ static dispatch_once_t oncePredicate;
 -(void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {
 }
 
-#pragma mark - 
+#pragma mark - Facade Design Pattern methods to call FreeFootie API
 
 //Refs will search through a list of the day’s games (sorted by geographical nearness).
 - (NSArray *)listOfGamesForDate:(NSDate *)date {
+   
 
+   NSString *message = [[textView.text stringByReplacingCharactersInRange:range withString:text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+   [_webSocket send:message];
 }
 
 //• Refs can see a map for each game if they need directions!
