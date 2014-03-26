@@ -27,6 +27,11 @@
 		3250607818E0081400345A64 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3250607718E0081400345A64 /* libicucore.dylib */; };
 		3250608918E0086900345A64 /* libSocketRocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3250608118E0082D00345A64 /* libSocketRocket.a */; };
 		3250608C18E009AD00345A64 /* RMSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250608B18E009AD00345A64 /* RMSocketManager.m */; };
+		3250609218E2BCE800345A64 /* RMGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250609118E2BCE800345A64 /* RMGameModel.m */; };
+		3250609618E2BD7800345A64 /* RMLocationsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250609518E2BD7800345A64 /* RMLocationsModel.m */; };
+		3250609918E2BDF300345A64 /* RMPlayersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250609818E2BDF300345A64 /* RMPlayersModel.m */; };
+		3250609F18E2BE7B00345A64 /* RMPoolsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250609E18E2BE7B00345A64 /* RMPoolsModel.m */; };
+		325060A218E2BEAC00345A64 /* RMTeamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060A118E2BEAC00345A64 /* RMTeamsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +100,16 @@
 		3250607918E0082D00345A64 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = ../Libs/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
 		3250608A18E009AD00345A64 /* RMSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSocketManager.h; sourceTree = "<group>"; };
 		3250608B18E009AD00345A64 /* RMSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSocketManager.m; sourceTree = "<group>"; };
+		3250609018E2BCE800345A64 /* RMGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMGameModel.h; path = Models/RMGameModel.h; sourceTree = "<group>"; };
+		3250609118E2BCE800345A64 /* RMGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMGameModel.m; path = Models/RMGameModel.m; sourceTree = "<group>"; };
+		3250609418E2BD7800345A64 /* RMLocationsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMLocationsModel.h; path = Models/RMLocationsModel.h; sourceTree = "<group>"; };
+		3250609518E2BD7800345A64 /* RMLocationsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMLocationsModel.m; path = Models/RMLocationsModel.m; sourceTree = "<group>"; };
+		3250609718E2BDF300345A64 /* RMPlayersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMPlayersModel.h; path = Models/RMPlayersModel.h; sourceTree = "<group>"; };
+		3250609818E2BDF300345A64 /* RMPlayersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMPlayersModel.m; path = Models/RMPlayersModel.m; sourceTree = "<group>"; };
+		3250609D18E2BE7B00345A64 /* RMPoolsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMPoolsModel.h; path = Models/RMPoolsModel.h; sourceTree = "<group>"; };
+		3250609E18E2BE7B00345A64 /* RMPoolsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMPoolsModel.m; path = Models/RMPoolsModel.m; sourceTree = "<group>"; };
+		325060A018E2BEAC00345A64 /* RMTeamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMTeamsModel.h; path = Models/RMTeamsModel.h; sourceTree = "<group>"; };
+		325060A118E2BEAC00345A64 /* RMTeamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMTeamsModel.m; path = Models/RMTeamsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +179,7 @@
 			children = (
 				3250604D18E0075500345A64 /* Main.storyboard */,
 				3250608A18E009AD00345A64 /* RMSocketManager.h */,
+				3250609318E2BCEC00345A64 /* Models */,
 				3250608B18E009AD00345A64 /* RMSocketManager.m */,
 				3250604A18E0075500345A64 /* RMAppDelegate.h */,
 				3250604B18E0075500345A64 /* RMAppDelegate.m */,
@@ -215,6 +231,23 @@
 				3250608718E0082D00345A64 /* TestChat.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3250609318E2BCEC00345A64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3250609418E2BD7800345A64 /* RMLocationsModel.h */,
+				3250609518E2BD7800345A64 /* RMLocationsModel.m */,
+				3250609018E2BCE800345A64 /* RMGameModel.h */,
+				3250609118E2BCE800345A64 /* RMGameModel.m */,
+				3250609718E2BDF300345A64 /* RMPlayersModel.h */,
+				3250609818E2BDF300345A64 /* RMPlayersModel.m */,
+				3250609D18E2BE7B00345A64 /* RMPoolsModel.h */,
+				3250609E18E2BE7B00345A64 /* RMPoolsModel.m */,
+				325060A018E2BEAC00345A64 /* RMTeamsModel.h */,
+				325060A118E2BEAC00345A64 /* RMTeamsModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,9 +386,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3250605218E0075500345A64 /* RMFirstViewController.m in Sources */,
+				325060A218E2BEAC00345A64 /* RMTeamsModel.m in Sources */,
+				3250609618E2BD7800345A64 /* RMLocationsModel.m in Sources */,
+				3250609F18E2BE7B00345A64 /* RMPoolsModel.m in Sources */,
 				3250605518E0075500345A64 /* RMSecondViewController.m in Sources */,
+				3250609918E2BDF300345A64 /* RMPlayersModel.m in Sources */,
 				3250608C18E009AD00345A64 /* RMSocketManager.m in Sources */,
 				3250604818E0075500345A64 /* main.m in Sources */,
+				3250609218E2BCE800345A64 /* RMGameModel.m in Sources */,
 				3250604C18E0075500345A64 /* RMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
