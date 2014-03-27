@@ -69,11 +69,12 @@ static dispatch_once_t oncePredicate;
 
 //   NSString *message = [[textView.text stringByReplacingCharactersInRange:range withString:text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 //   [socket send:message];
+   return nil;
 }
 
 //• Refs can see a map for each game if they need directions!
 - (NSArray *)mapsForGame:(id)game {
-
+   return nil;
 }
 
 //• Refs choose which game they are taking by checking in.!

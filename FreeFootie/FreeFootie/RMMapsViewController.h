@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RMSecondViewController : UIViewController
+@interface RMMapsViewController : UIViewController
 
 @end

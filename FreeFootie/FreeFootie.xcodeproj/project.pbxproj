@@ -15,7 +15,7 @@
 		3250604C18E0075500345A64 /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250604B18E0075500345A64 /* RMAppDelegate.m */; };
 		3250604F18E0075500345A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3250604D18E0075500345A64 /* Main.storyboard */; };
 		3250605218E0075500345A64 /* RMGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250605118E0075500345A64 /* RMGamesViewController.m */; };
-		3250605518E0075500345A64 /* RMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250605418E0075500345A64 /* RMSecondViewController.m */; };
+		3250605518E0075500345A64 /* RMMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250605418E0075500345A64 /* RMMapsViewController.m */; };
 		3250605718E0075500345A64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3250605618E0075500345A64 /* Images.xcassets */; };
 		3250605E18E0075500345A64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3250605D18E0075500345A64 /* XCTest.framework */; };
 		3250605F18E0075500345A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3250603B18E0075500345A64 /* Foundation.framework */; };
@@ -32,6 +32,15 @@
 		3250609918E2BDF300345A64 /* RMPlayersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250609818E2BDF300345A64 /* RMPlayersModel.m */; };
 		3250609F18E2BE7B00345A64 /* RMPoolsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250609E18E2BE7B00345A64 /* RMPoolsModel.m */; };
 		325060A218E2BEAC00345A64 /* RMTeamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060A118E2BEAC00345A64 /* RMTeamsModel.m */; };
+		325060A518E3D7B700345A64 /* RMScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060A418E3D7B700345A64 /* RMScoreViewController.m */; };
+		325060B618E3E03100345A64 /* JDDateCountdownFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060A818E3E03100345A64 /* JDDateCountdownFlipView.m */; };
+		325060B718E3E03100345A64 /* JDFlipClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060AA18E3E03100345A64 /* JDFlipClockView.m */; };
+		325060B818E3E03100345A64 /* JDFlipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060AC18E3E03100345A64 /* JDFlipImageView.m */; };
+		325060B918E3E03100345A64 /* JDFlipNumberDigitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060AE18E3E03100345A64 /* JDFlipNumberDigitView.m */; };
+		325060BA18E3E03100345A64 /* JDFlipNumberView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 325060AF18E3E03100345A64 /* JDFlipNumberView.bundle */; };
+		325060BB18E3E03100345A64 /* JDFlipNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060B118E3E03100345A64 /* JDFlipNumberView.m */; };
+		325060BC18E3E03100345A64 /* JDFlipNumberViewImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060B318E3E03100345A64 /* JDFlipNumberViewImageFactory.m */; };
+		325060BD18E3E03100345A64 /* UIView+JDFlipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060B518E3E03100345A64 /* UIView+JDFlipImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +95,8 @@
 		3250604E18E0075500345A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3250605018E0075500345A64 /* RMGamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMGamesViewController.h; sourceTree = "<group>"; };
 		3250605118E0075500345A64 /* RMGamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMGamesViewController.m; sourceTree = "<group>"; };
-		3250605318E0075500345A64 /* RMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSecondViewController.h; sourceTree = "<group>"; };
-		3250605418E0075500345A64 /* RMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSecondViewController.m; sourceTree = "<group>"; };
+		3250605318E0075500345A64 /* RMMapsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMMapsViewController.h; sourceTree = "<group>"; };
+		3250605418E0075500345A64 /* RMMapsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMMapsViewController.m; sourceTree = "<group>"; };
 		3250605618E0075500345A64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3250605C18E0075500345A64 /* FreeFootieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFootieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3250605D18E0075500345A64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,6 +119,23 @@
 		3250609E18E2BE7B00345A64 /* RMPoolsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMPoolsModel.m; path = Models/RMPoolsModel.m; sourceTree = "<group>"; };
 		325060A018E2BEAC00345A64 /* RMTeamsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMTeamsModel.h; path = Models/RMTeamsModel.h; sourceTree = "<group>"; };
 		325060A118E2BEAC00345A64 /* RMTeamsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMTeamsModel.m; path = Models/RMTeamsModel.m; sourceTree = "<group>"; };
+		325060A318E3D7B700345A64 /* RMScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMScoreViewController.h; sourceTree = "<group>"; };
+		325060A418E3D7B700345A64 /* RMScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMScoreViewController.m; sourceTree = "<group>"; };
+		325060A718E3E03100345A64 /* JDDateCountdownFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDateCountdownFlipView.h; sourceTree = "<group>"; };
+		325060A818E3E03100345A64 /* JDDateCountdownFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDateCountdownFlipView.m; sourceTree = "<group>"; };
+		325060A918E3E03100345A64 /* JDFlipClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFlipClockView.h; sourceTree = "<group>"; };
+		325060AA18E3E03100345A64 /* JDFlipClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipClockView.m; sourceTree = "<group>"; };
+		325060AB18E3E03100345A64 /* JDFlipImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFlipImageView.h; sourceTree = "<group>"; };
+		325060AC18E3E03100345A64 /* JDFlipImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipImageView.m; sourceTree = "<group>"; };
+		325060AD18E3E03100345A64 /* JDFlipNumberDigitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFlipNumberDigitView.h; sourceTree = "<group>"; };
+		325060AE18E3E03100345A64 /* JDFlipNumberDigitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipNumberDigitView.m; sourceTree = "<group>"; };
+		325060AF18E3E03100345A64 /* JDFlipNumberView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JDFlipNumberView.bundle; sourceTree = "<group>"; };
+		325060B018E3E03100345A64 /* JDFlipNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFlipNumberView.h; sourceTree = "<group>"; };
+		325060B118E3E03100345A64 /* JDFlipNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipNumberView.m; sourceTree = "<group>"; };
+		325060B218E3E03100345A64 /* JDFlipNumberViewImageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFlipNumberViewImageFactory.h; sourceTree = "<group>"; };
+		325060B318E3E03100345A64 /* JDFlipNumberViewImageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipNumberViewImageFactory.m; sourceTree = "<group>"; };
+		325060B418E3E03100345A64 /* UIView+JDFlipImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDFlipImageView.h"; sourceTree = "<group>"; };
+		325060B518E3E03100345A64 /* UIView+JDFlipImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDFlipImageView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +203,7 @@
 		3250604118E0075500345A64 /* FreeFootie */ = {
 			isa = PBXGroup;
 			children = (
+				325060A618E3E03100345A64 /* JDFlipNumberView */,
 				3250604D18E0075500345A64 /* Main.storyboard */,
 				3250608A18E009AD00345A64 /* RMSocketManager.h */,
 				3250609318E2BCEC00345A64 /* Models */,
@@ -185,8 +212,10 @@
 				3250604B18E0075500345A64 /* RMAppDelegate.m */,
 				3250605018E0075500345A64 /* RMGamesViewController.h */,
 				3250605118E0075500345A64 /* RMGamesViewController.m */,
-				3250605318E0075500345A64 /* RMSecondViewController.h */,
-				3250605418E0075500345A64 /* RMSecondViewController.m */,
+				3250605318E0075500345A64 /* RMMapsViewController.h */,
+				3250605418E0075500345A64 /* RMMapsViewController.m */,
+				325060A318E3D7B700345A64 /* RMScoreViewController.h */,
+				325060A418E3D7B700345A64 /* RMScoreViewController.m */,
 				3250605618E0075500345A64 /* Images.xcassets */,
 				3250604218E0075500345A64 /* Supporting Files */,
 			);
@@ -248,6 +277,28 @@
 				325060A118E2BEAC00345A64 /* RMTeamsModel.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		325060A618E3E03100345A64 /* JDFlipNumberView */ = {
+			isa = PBXGroup;
+			children = (
+				325060A718E3E03100345A64 /* JDDateCountdownFlipView.h */,
+				325060A818E3E03100345A64 /* JDDateCountdownFlipView.m */,
+				325060A918E3E03100345A64 /* JDFlipClockView.h */,
+				325060AA18E3E03100345A64 /* JDFlipClockView.m */,
+				325060AB18E3E03100345A64 /* JDFlipImageView.h */,
+				325060AC18E3E03100345A64 /* JDFlipImageView.m */,
+				325060AD18E3E03100345A64 /* JDFlipNumberDigitView.h */,
+				325060AE18E3E03100345A64 /* JDFlipNumberDigitView.m */,
+				325060AF18E3E03100345A64 /* JDFlipNumberView.bundle */,
+				325060B018E3E03100345A64 /* JDFlipNumberView.h */,
+				325060B118E3E03100345A64 /* JDFlipNumberView.m */,
+				325060B218E3E03100345A64 /* JDFlipNumberViewImageFactory.h */,
+				325060B318E3E03100345A64 /* JDFlipNumberViewImageFactory.m */,
+				325060B418E3E03100345A64 /* UIView+JDFlipImageView.h */,
+				325060B518E3E03100345A64 /* UIView+JDFlipImageView.m */,
+			);
+			path = JDFlipNumberView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325060BA18E3E03100345A64 /* JDFlipNumberView.bundle in Resources */,
 				3250605718E0075500345A64 /* Images.xcassets in Resources */,
 				3250604618E0075500345A64 /* InfoPlist.strings in Resources */,
 				3250604F18E0075500345A64 /* Main.storyboard in Resources */,
@@ -389,11 +441,19 @@
 				325060A218E2BEAC00345A64 /* RMTeamsModel.m in Sources */,
 				3250609618E2BD7800345A64 /* RMLocationsModel.m in Sources */,
 				3250609F18E2BE7B00345A64 /* RMPoolsModel.m in Sources */,
-				3250605518E0075500345A64 /* RMSecondViewController.m in Sources */,
+				3250605518E0075500345A64 /* RMMapsViewController.m in Sources */,
 				3250609918E2BDF300345A64 /* RMPlayersModel.m in Sources */,
 				3250608C18E009AD00345A64 /* RMSocketManager.m in Sources */,
+				325060B618E3E03100345A64 /* JDDateCountdownFlipView.m in Sources */,
+				325060B918E3E03100345A64 /* JDFlipNumberDigitView.m in Sources */,
+				325060BC18E3E03100345A64 /* JDFlipNumberViewImageFactory.m in Sources */,
+				325060A518E3D7B700345A64 /* RMScoreViewController.m in Sources */,
+				325060BB18E3E03100345A64 /* JDFlipNumberView.m in Sources */,
 				3250604818E0075500345A64 /* main.m in Sources */,
+				325060B718E3E03100345A64 /* JDFlipClockView.m in Sources */,
+				325060B818E3E03100345A64 /* JDFlipImageView.m in Sources */,
 				3250609218E2BCE800345A64 /* RMGameModel.m in Sources */,
+				325060BD18E3E03100345A64 /* UIView+JDFlipImageView.m in Sources */,
 				3250604C18E0075500345A64 /* RMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

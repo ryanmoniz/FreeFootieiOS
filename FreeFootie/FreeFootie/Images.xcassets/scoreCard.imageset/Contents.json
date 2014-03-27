@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "soccer-tabbar-icon.png"
+      "filename" : "score-card.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "soccer-tabbar-icon@2x.png"
+      "filename" : "score-card@2x.png"
     }
   ],
   "info" : {

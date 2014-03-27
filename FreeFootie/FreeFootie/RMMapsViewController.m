@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 ryanmoniz. All rights reserved.
 //
 
-#import "RMSecondViewController.h"
+#import "RMMapsViewController.h"
 
-@interface RMSecondViewController ()
+@interface RMMapsViewController ()
 
 @end
 
-@implementation RMSecondViewController
+@implementation RMMapsViewController
 
 - (void)viewDidLoad
 {
