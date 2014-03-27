@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 ryanmoniz. All rights reserved.
 //
 
-#import "RMFirstViewController.h"
+#import "RMGamesViewController.h"
 
-@interface RMFirstViewController ()
+@interface RMGamesViewController ()
 
 @end
 
-@implementation RMFirstViewController
+@implementation RMGamesViewController
 
 - (void)viewDidLoad
 {

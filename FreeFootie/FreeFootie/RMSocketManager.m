@@ -67,8 +67,8 @@ static dispatch_once_t oncePredicate;
 - (NSArray *)listOfGamesForDate:(NSDate *)date {
    
 
-   NSString *message = [[textView.text stringByReplacingCharactersInRange:range withString:text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-   [_webSocket send:message];
+//   NSString *message = [[textView.text stringByReplacingCharactersInRange:range withString:text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+//   [socket send:message];
 }
 
 //• Refs can see a map for each game if they need directions!

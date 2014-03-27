@@ -14,7 +14,7 @@
 		3250604818E0075500345A64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250604718E0075500345A64 /* main.m */; };
 		3250604C18E0075500345A64 /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250604B18E0075500345A64 /* RMAppDelegate.m */; };
 		3250604F18E0075500345A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3250604D18E0075500345A64 /* Main.storyboard */; };
-		3250605218E0075500345A64 /* RMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250605118E0075500345A64 /* RMFirstViewController.m */; };
+		3250605218E0075500345A64 /* RMGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250605118E0075500345A64 /* RMGamesViewController.m */; };
 		3250605518E0075500345A64 /* RMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250605418E0075500345A64 /* RMSecondViewController.m */; };
 		3250605718E0075500345A64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3250605618E0075500345A64 /* Images.xcassets */; };
 		3250605E18E0075500345A64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3250605D18E0075500345A64 /* XCTest.framework */; };
@@ -84,8 +84,8 @@
 		3250604A18E0075500345A64 /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
 		3250604B18E0075500345A64 /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
 		3250604E18E0075500345A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3250605018E0075500345A64 /* RMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMFirstViewController.h; sourceTree = "<group>"; };
-		3250605118E0075500345A64 /* RMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMFirstViewController.m; sourceTree = "<group>"; };
+		3250605018E0075500345A64 /* RMGamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMGamesViewController.h; sourceTree = "<group>"; };
+		3250605118E0075500345A64 /* RMGamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMGamesViewController.m; sourceTree = "<group>"; };
 		3250605318E0075500345A64 /* RMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSecondViewController.h; sourceTree = "<group>"; };
 		3250605418E0075500345A64 /* RMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSecondViewController.m; sourceTree = "<group>"; };
 		3250605618E0075500345A64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 				3250608B18E009AD00345A64 /* RMSocketManager.m */,
 				3250604A18E0075500345A64 /* RMAppDelegate.h */,
 				3250604B18E0075500345A64 /* RMAppDelegate.m */,
-				3250605018E0075500345A64 /* RMFirstViewController.h */,
-				3250605118E0075500345A64 /* RMFirstViewController.m */,
+				3250605018E0075500345A64 /* RMGamesViewController.h */,
+				3250605118E0075500345A64 /* RMGamesViewController.m */,
 				3250605318E0075500345A64 /* RMSecondViewController.h */,
 				3250605418E0075500345A64 /* RMSecondViewController.m */,
 				3250605618E0075500345A64 /* Images.xcassets */,
@@ -385,7 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3250605218E0075500345A64 /* RMFirstViewController.m in Sources */,
+				3250605218E0075500345A64 /* RMGamesViewController.m in Sources */,
 				325060A218E2BEAC00345A64 /* RMTeamsModel.m in Sources */,
 				3250609618E2BD7800345A64 /* RMLocationsModel.m in Sources */,
 				3250609F18E2BE7B00345A64 /* RMPoolsModel.m in Sources */,
