@@ -36,4 +36,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)mapView:(MKMapView *)mv didAddAnnotationViews:(NSArray *)views
+{
+   MKAnnotationView *annotationView = [views objectAtIndex:0];
+   id<MKAnnotation> mp = [annotationView annotation];
+   MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([mp coordinate] ,250,250);
+   [mv setRegion:region animated:YES];
+}
+
 @end
