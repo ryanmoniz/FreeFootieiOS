@@ -12,5 +12,6 @@
 
 @property (nonatomic, retain) IBOutlet UITableView *gamesTableView;
 @property (nonatomic, retain) NSMutableArray       *gamesArray;
+@property (nonatomic, retain) NSMutableArray       *teamsArray;
 
 @end

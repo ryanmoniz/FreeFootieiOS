@@ -20,12 +20,31 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+   self.gamesArray = [[NSMutableArray alloc] init];
+   self.teamsArray = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+   [super viewWillAppear:animated];
+
+   if ([self.gamesArray count] == 0) {
+      //no games :(
+      UILabel *nogamesLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame)-125, CGRectGetMidY(self.view.frame)-100, 250, 100)];
+      nogamesLabel.text = @"Sorry, no games scheduled";
+      nogamesLabel.textAlignment = NSTextAlignmentCenter;
+      nogamesLabel.textColor = [UIColor whiteColor];
+      [self.view addSubview:nogamesLabel];
+   }
+   else {
+      [self.gamesTableView reloadData];
+   }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -40,7 +59,22 @@
    NSNumber *homeNumber = [(RMGameModel *)[self.gamesArray objectAtIndex:indexPath.row] homeTeamIDNumber];
    NSNumber *awayNumber = [(RMGameModel *)[self.gamesArray objectAtIndex:indexPath.row] awayTeamIDNumber];
 
-   cell.textLabel.text = [NSString stringWithFormat:@"%d vs. %d",[homeNumber intValue],[awayNumber intValue]];
+   NSString *homeString = @"";
+   NSString *awayString = @"";
+
+   for (RMTeamsModel *model in self.teamsArray) {
+      if ([[model idNumber] isEqualToNumber:homeNumber]) {
+         homeString = [model teamNameString];
+      }
+      else if ([[model idNumber] isEqualToNumber:awayNumber]) {
+         awayString = [model teamNameString];
+      }
+      if (([homeString length] > 0) && ([awayString length] > 0)) {
+         break;
+      }
+   }
+
+   cell.textLabel.text = [NSString stringWithFormat:@"%@ vs. %@",homeString, awayString];
    cell.detailTextLabel.text = @"";
 
    return cell;
