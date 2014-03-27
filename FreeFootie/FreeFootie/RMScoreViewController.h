@@ -19,6 +19,10 @@
    JDFlipNumberView *awayFlipView;
    int homeScore;
    int awayScore;
+
+   JDDateCountdownFlipView *gameTimeFlipView;
 }
 
+@property (nonatomic, retain) IBOutlet UITableView *eventsTableView;
+@property (nonatomic, retain) NSMutableArray 		*eventsArray;
 @end

@@ -65,31 +65,33 @@ static dispatch_once_t oncePredicate;
 
 //Refs will search through a list of the day’s games (sorted by geographical nearness).
 - (NSArray *)listOfGamesForDate:(NSDate *)date {
-   
-
-//   NSString *message = [[textView.text stringByReplacingCharactersInRange:range withString:text] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-//   [socket send:message];
+   // get on URL/ref/games/
    return nil;
 }
 
 //• Refs can see a map for each game if they need directions!
 - (NSArray *)mapsForGame:(id)game {
+   // get on URL/admin/location/:id
+
    return nil;
 }
 
 //• Refs choose which game they are taking by checking in.!
 - (void)checkingInForGame:(id)game {
-
+   //put on /URL/ref/games/:id
 }
 
 //• Once at the game, they can increment scores and submit the game results.!
 - (void)submitScore:(NSDictionary *)score forGame:(id)game {
-
+   //no where is the game score recorded,
+   //need to determine winner, loser, draw, and update their standings data instead
+   //put on /URL/public/standings/:id
 }
 
 //• The ref can also show cards and book players for good or bad behaviour.!
 - (void)submitCard:(id)card forPlayer:(id)player {
-   
+   //i'm guessings its this purplecard.js file that handles in backend
+   //put on /URL/ref/directives/:id
 }
 
 

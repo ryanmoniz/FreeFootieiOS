@@ -11,6 +11,9 @@
 @property (nonatomic, strong) NSDate *targetDate;
 @property (nonatomic, assign) NSUInteger zDistance;
 
+@property (nonatomic, strong) JDFlipNumberView* minuteFlipNumberView;
+@property (nonatomic, strong) JDFlipNumberView* secondFlipNumberView;
+
 - (id)initWithDayDigitCount:(NSInteger)dayDigits;
 - (id)initWithDayDigitCount:(NSInteger)dayDigits
             imageBundleName:(NSString*)imageBundleName;

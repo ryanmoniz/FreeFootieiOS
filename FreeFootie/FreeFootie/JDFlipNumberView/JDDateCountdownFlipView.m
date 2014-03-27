@@ -16,8 +16,7 @@ static CGFloat kFlipAnimationUpdateInterval = 0.5; // = 2 times per second
 @property (nonatomic, copy) NSString *imageBundleName;
 @property (nonatomic, strong) JDFlipNumberView* dayFlipNumberView;
 @property (nonatomic, strong) JDFlipNumberView* hourFlipNumberView;
-@property (nonatomic, strong) JDFlipNumberView* minuteFlipNumberView;
-@property (nonatomic, strong) JDFlipNumberView* secondFlipNumberView;
+
 
 @property (nonatomic, strong) NSTimer *animationTimer;
 @end

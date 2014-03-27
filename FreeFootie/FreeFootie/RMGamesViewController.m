@@ -41,8 +41,10 @@
       nogamesLabel.textAlignment = NSTextAlignmentCenter;
       nogamesLabel.textColor = [UIColor whiteColor];
       [self.view addSubview:nogamesLabel];
+      [self.gamesTableView setHidden:YES];
    }
    else {
+      [self.gamesTableView setHidden:NO];
       [self.gamesTableView reloadData];
    }
 }
@@ -75,13 +77,16 @@
    }
 
    cell.textLabel.text = [NSString stringWithFormat:@"%@ vs. %@",homeString, awayString];
-   cell.detailTextLabel.text = @"";
 
    return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
    return [self.gamesArray count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+   //should get the information about the game and either push a view to either show more info about the teams playing, the pool, location, status, etc.
 }
 
 @end
