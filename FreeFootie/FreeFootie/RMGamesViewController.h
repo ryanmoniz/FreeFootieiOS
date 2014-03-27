@@ -10,4 +10,6 @@
 
 @interface RMGamesViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UITableView *gamesTableView;
+
 @end
