@@ -27,7 +27,6 @@
    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
 
    [self.mapView setShowsUserLocation:YES];
-
 }
 
 - (void)didReceiveMemoryWarning
