@@ -15,7 +15,10 @@
 #import "UIView+JDFlipImageView.h"
 
 @interface RMScoreViewController : UIViewController {
-   JDFlipNumberView *flipView;
+   JDFlipNumberView *homeFlipView;
+   JDFlipNumberView *awayFlipView;
+   int homeScore;
+   int awayScore;
 }
 
 @end
