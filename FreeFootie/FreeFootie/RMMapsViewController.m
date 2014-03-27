@@ -18,6 +18,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+   self.mapView.delegate = self;
+   self.locationManager = [[CLLocationManager alloc] init];
+
+   [self.locationManager setDelegate:self];
+   [self.locationManager setDistanceFilter:kCLDistanceFilterNone];
+   [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+
+   [self.mapView setShowsUserLocation:YES];
+
 }
 
 - (void)didReceiveMemoryWarning

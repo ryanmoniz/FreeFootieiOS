@@ -41,6 +41,9 @@
 		325060BB18E3E03100345A64 /* JDFlipNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060B118E3E03100345A64 /* JDFlipNumberView.m */; };
 		325060BC18E3E03100345A64 /* JDFlipNumberViewImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060B318E3E03100345A64 /* JDFlipNumberViewImageFactory.m */; };
 		325060BD18E3E03100345A64 /* UIView+JDFlipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325060B518E3E03100345A64 /* UIView+JDFlipImageView.m */; };
+		325060BF18E3F18800345A64 /* JDFlipNumberViewIOS6.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 325060BE18E3F18800345A64 /* JDFlipNumberViewIOS6.bundle */; };
+		325060C118E3FAA600345A64 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325060C018E3FAA500345A64 /* MapKit.framework */; };
+		325060C318E3FADD00345A64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325060C218E3FADD00345A64 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +139,9 @@
 		325060B318E3E03100345A64 /* JDFlipNumberViewImageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipNumberViewImageFactory.m; sourceTree = "<group>"; };
 		325060B418E3E03100345A64 /* UIView+JDFlipImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDFlipImageView.h"; sourceTree = "<group>"; };
 		325060B518E3E03100345A64 /* UIView+JDFlipImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDFlipImageView.m"; sourceTree = "<group>"; };
+		325060BE18E3F18800345A64 /* JDFlipNumberViewIOS6.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JDFlipNumberViewIOS6.bundle; sourceTree = "<group>"; };
+		325060C018E3FAA500345A64 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		325060C218E3FADD00345A64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325060C318E3FADD00345A64 /* CoreLocation.framework in Frameworks */,
+				325060C118E3FAA600345A64 /* MapKit.framework in Frameworks */,
 				3250608918E0086900345A64 /* libSocketRocket.a in Frameworks */,
 				3250607818E0081400345A64 /* libicucore.dylib in Frameworks */,
 				3250607618E0080900345A64 /* CFNetwork.framework in Frameworks */,
@@ -189,6 +197,8 @@
 		3250603A18E0075500345A64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				325060C218E3FADD00345A64 /* CoreLocation.framework */,
+				325060C018E3FAA500345A64 /* MapKit.framework */,
 				3250607718E0081400345A64 /* libicucore.dylib */,
 				3250607518E0080900345A64 /* CFNetwork.framework */,
 				3250607318E007FF00345A64 /* Security.framework */,
@@ -282,6 +292,7 @@
 		325060A618E3E03100345A64 /* JDFlipNumberView */ = {
 			isa = PBXGroup;
 			children = (
+				325060BE18E3F18800345A64 /* JDFlipNumberViewIOS6.bundle */,
 				325060A718E3E03100345A64 /* JDDateCountdownFlipView.h */,
 				325060A818E3E03100345A64 /* JDDateCountdownFlipView.m */,
 				325060A918E3E03100345A64 /* JDFlipClockView.h */,
@@ -418,6 +429,7 @@
 				325060BA18E3E03100345A64 /* JDFlipNumberView.bundle in Resources */,
 				3250605718E0075500345A64 /* Images.xcassets in Resources */,
 				3250604618E0075500345A64 /* InfoPlist.strings in Resources */,
+				325060BF18E3F18800345A64 /* JDFlipNumberViewIOS6.bundle in Resources */,
 				3250604F18E0075500345A64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
