@@ -11,5 +11,6 @@
 @interface RMGamesViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet UITableView *gamesTableView;
+@property (nonatomic, retain) NSMutableArray       *gamesArray;
 
 @end
